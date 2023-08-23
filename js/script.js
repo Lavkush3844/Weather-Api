@@ -9,6 +9,7 @@ const location_not_found = document.querySelector('.location-not-found');
 const weather_body = document.querySelector('.weather-body');
 
 const getData = () => {
+    event.preventDefault();
     const url = "https://api.openweathermap.org/data/2.5/weather?q=";
     const api_key = "183a43f38c097a03731da43ca5d6ad28";
     let cityName = document.querySelector(".input-box").value;
